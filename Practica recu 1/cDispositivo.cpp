@@ -54,3 +54,9 @@ void cDispositivo::Descargar_Contenido(stack<string> Pelis_A_Descargar) //enreal
 		}
 	}
 }
+
+void cDispositivo::logout()
+{
+	this->Perfil_actual = nullptr;
+	this->Cuenta = nullptr;
+}

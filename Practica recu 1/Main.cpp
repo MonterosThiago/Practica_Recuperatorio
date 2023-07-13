@@ -35,6 +35,7 @@ int main()
 
 	cCuenta* Cindy = PamplixCorp->SingUp("cindylamejor@hotmail.com", "muñeco4everandever", "4319-6542-6489-1234");
 	try {
+		cDispositivo* midispositivo4 = new cAndroid(PamplixCorp);
 		cPerfil* mio = new cPerfil("Cin");
 		cPerfil* flia = new cPerfil("Familia", false);
 		cPerfil* Franco = new cPerfil();
@@ -50,9 +51,9 @@ int main()
 		pelisADescargar.push("Cars");
 		pelisADescargar.push("Intensamente");
 		
-		midispositivo->login("cindylamejor@hotmail.com", "muñeco4everandever");
-		midispositivo->descargarContenido(pelisADescargar);
-		midispositivo->logout();
+		midispositivo4->login("cindylamejor@hotmail.com", "muñeco4everandever");
+		midispositivo4->Descargar_Contenido(pelisADescargar);
+		midispositivo4->logout();
 	}
 	catch (cExceptionPerfil* e) { cout << e->what() << endl;}
 }
