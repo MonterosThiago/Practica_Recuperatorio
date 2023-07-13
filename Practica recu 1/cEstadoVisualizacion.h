@@ -2,7 +2,7 @@
 
 #ifndef _CESTADOVISUALIZACION_H
 #define _CESTADOVISUALIZACION_H
-#include <ctime>
+
 #include "cContenido.h"
 
 class cEstadoVisualizacion {
@@ -12,7 +12,7 @@ private:
 	tm Fecha_Completado;
 	cContenido* Contenido;
 public:
-	cEstadoVisualizacion(cContenido* inicializacion, bool completado/*?*/, tm fecha);
+	cEstadoVisualizacion(cContenido* inicializacion, bool completado, tm fecha);
 	~cEstadoVisualizacion();
 };
 

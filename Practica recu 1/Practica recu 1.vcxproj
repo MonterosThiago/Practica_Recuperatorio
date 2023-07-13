@@ -136,6 +136,7 @@
     <ClCompile Include="cPamplix.cpp" />
     <ClCompile Include="cPelicula.cpp" />
     <ClCompile Include="cPerfil.cpp" />
+    <ClCompile Include="libraries.h" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>

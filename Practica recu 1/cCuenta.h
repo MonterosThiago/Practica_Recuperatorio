@@ -19,8 +19,9 @@ public:
 	~cCuenta();
 	cLista_Perfiles* getPerfiles();
 	void operator-(cPerfil* quitado);
-	void operator+(cPerfil* agregado);
 	string get_mail();
 	string get_contra();
+	void agregar_perfil(cPerfil* nuevo);
 };
+void operator+(cCuenta original,cPerfil* agregado);
 #endif

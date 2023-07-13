@@ -2,6 +2,7 @@
 
 #include "cPamplix.h"
 #include "cExceptionPerfil.h"
+#include "libraries.h"
 
 int main()
 {

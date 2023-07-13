@@ -2,9 +2,7 @@
 
 #ifndef _CCONTENIDO_H
 #define _CCONTENIDO_H
-#include <cstdlib>
-#include <string>
-#include <list>
+
 #include "cDispositivo.h"
 using namespace std;
 

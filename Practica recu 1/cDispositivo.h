@@ -20,7 +20,7 @@ public:
 	cDispositivo(cPamplix* a);
 	cDispositivo(int id, cPamplix* a);
 	void login(string Email, string password);
-	void virtual Reproducir(cContenido* contenido) =0;
+	void virtual Reproducir(cContenido* contenido)=0;
 	void virtual Pausar() = 0;
 	void virtual Cancelar() = 0;
 	cCuenta* get_usuario();

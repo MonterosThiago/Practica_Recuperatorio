@@ -3,6 +3,7 @@
 #define _CPERFIL_H
 #include "cEstadoVisualizacion.h"
 
+
 class cPerfil {
 private:
 	bool Familiar;
@@ -25,7 +26,7 @@ public:
 	void agregar_a_vistos(cEstadoVisualizacion* agregado);
 	friend istream& operator>>(istream& in, cPerfil cosa);
 };
-istream& operator>>(istream& in, cPerfil cosa)
+istream& operator>>(istream& in, cPerfil cosa);
 list<cContenido*>::iterator operator+(list<cContenido*>::iterator original, unsigned int corrimiento);
 
 #endif

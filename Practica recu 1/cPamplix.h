@@ -2,10 +2,6 @@
 #ifndef _CPAMPLIX_H
 #define _CPAMPLIX_H
 
-#include "cPerfil.h"
-#include "cAndroid.h"
-#include "cIOS.h"
-#include "cPC.h"
 #include <iostream>
 #include "cPelicula.h"
 class cPamplix {
@@ -14,7 +10,7 @@ private:
 	list<cContenido*> Contenidos;
 	list<cDispositivo*> Dispositivos;
 	list<cCuenta*>cuentas;
-	friend cContenido* cPerfil::Elegir_contenido_random();
+	friend cContenido* Elegir_contenido_random();
 public:
 	cPamplix();
 	~cPamplix();

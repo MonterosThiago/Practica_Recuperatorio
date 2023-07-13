@@ -31,11 +31,6 @@ void cCuenta::operator-(cPerfil* quitado)
     delete aux;
 }
 
-void cCuenta::operator+(cPerfil* agregado)
-{
-    this->Perfiles->push_back(agregado);
-}
-
 string cCuenta::get_mail()
 {
     return this->Mail;
@@ -44,4 +39,14 @@ string cCuenta::get_mail()
 string cCuenta::get_contra()
 {
     return this->contrasenia;
+}
+
+void cCuenta::agregar_perfil(cPerfil* nuevo)
+{
+    this->Perfiles->push_back(nuevo);
+}
+
+void operator+(cCuenta original, cPerfil* agregado)
+{
+    original.agregar_perfil(agregado);
 }
